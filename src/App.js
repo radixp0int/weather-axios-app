@@ -18,7 +18,6 @@ function App() {
         .get(url)
         .then((response) => {
           setData(response.data);
-          console.log(response.data);
         })
         .catch((err) => {
           console.error(err);
@@ -38,7 +37,7 @@ function App() {
             {data.main ? (
               <h1>{data.main?.temp.toFixed(1)}°F</h1>
             ) : (
-              <h2>Welcome to the React Weather App</h2>
+              <h2>React Weather App</h2>
             )}
           </div>
           <div className="description">

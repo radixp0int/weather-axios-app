@@ -28,9 +28,9 @@ h2 {
   justify-content: center;
   text-align: center;
   padding: 1rem;
-
+  margin-top: 2.5rem;
   border-radius: 2.5rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   color: #f8f8f8;
 }
 
@@ -60,10 +60,10 @@ h2 {
 
 .app input {
   padding: .7rem 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.8);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   color: #f8f8f8;
 }
 
@@ -97,6 +97,14 @@ h2 {
   .bold {
     font-size: 1.5rem;
     font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    justify-content: center;
+    text-align: center;
+    margin: 2.5rem 2rem 0.5rem 1rem;
   }
 
   p {
