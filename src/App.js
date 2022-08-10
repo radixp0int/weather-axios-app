@@ -7,12 +7,18 @@ function App() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${process.env.API_URL}`;
+  const BASE_URL = `https://api.openweathermap.org/data/2.5/weather`;
+  const queryParams = {
+    q: `${location}`,
+    units: "imperial",
+    appid: `${env.API_URL}`,
+  };
+  const params = new URLSearchParams(queryParams);
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {
       axios
-        .get(url)
+        .get(BASE_URL + "?" + params.toString())
         .then((response) => {
           setData(response.data);
         })
